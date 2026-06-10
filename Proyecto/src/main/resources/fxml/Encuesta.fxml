@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="12"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.proyecto.EncuestaController">
+
+    <Label text="ENCUESTA ONE PIECE"/>
+
+    <Label text="1. ¿Quién es el capitán?"/>
+    <ComboBox fx:id="p1"/>
+
+    <Label text="2. ¿Quién usa tres espadas?"/>
+    <ComboBox fx:id="p2"/>
+
+    <Label text="3. ¿Quién cocina?"/>
+    <ComboBox fx:id="p3"/>
+
+    <Label text="4. ¿Cuál es el sueño de Luffy?"/>
+    <ComboBox fx:id="p4"/>
+
+    <Button text="Finalizar" onAction="#calcular"/>
+
+    <Label fx:id="lblResultado"/>
+
+</VBox>
